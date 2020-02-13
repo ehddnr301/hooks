@@ -1,8 +1,14 @@
 import React from "react";
-import "./App.css";
+import Screen from "./Screen";
+import Lang from "./Context";
+import translations from "./translations";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Lang defaultLang="en" translations={translations}>
+      <Screen></Screen>
+    </Lang>
+  );
 }
 
 export default App;
