@@ -7,7 +7,7 @@ const initialState = {
 const ADD = "add";
 
 const reducer = (state, action) => {
-  switch (action) {
+  switch (action.type) {
     case ADD:
       return { toDos: [...state.toDos, { text: action.payload }] };
     default:
